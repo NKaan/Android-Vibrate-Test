@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/anaSayfa_id"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arka_plan_dongusel"
+    tools:context=".AnaSayfa">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="2 Tireşim Arası Geçen Süre (Ms)"
+        app:layout_constraintBottom_toBottomOf="@+id/iki_titresim_arasi_gecen_sure_edit"
+        app:layout_constraintEnd_toStartOf="@+id/iki_titresim_arasi_gecen_sure_edit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iki_titresim_arasi_gecen_sure_edit"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Titreme Süresi (Ms)\n1sn = 1000ms"
+        app:layout_constraintBottom_toBottomOf="@+id/titreme_suresi_edit"
+        app:layout_constraintEnd_toStartOf="@+id/titreme_suresi_edit"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titreme_suresi_edit"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/iki_titresim_arasi_gecen_sure_edit"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint=""
+        android:text="250"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/titreme_suresi_edit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titreme_suresi_edit"
+        app:layout_constraintTop_toBottomOf="@+id/titreme_suresi_edit"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Qa Vibrator Test"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dongu_saat_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Döngü Sayısını"
+        app:layout_constraintBottom_toBottomOf="@+id/dongu_sayisi_edit"
+        app:layout_constraintEnd_toStartOf="@+id/dongu_sayisi_edit"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dongu_sayisi_edit"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <Button
+        android:id="@+id/baslat"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Başlat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kalan_adim_sayisi_progress" />
+
+    <EditText
+        android:id="@+id/titreme_suresi_edit"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint=""
+        android:text="1000"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/dongu_sayisi_edit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dongu_sayisi_edit"
+        app:layout_constraintTop_toBottomOf="@+id/dongu_sayisi_edit"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/dongu_sayisi_edit"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="number"
+        android:text="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group_id"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/gecen_sure_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:inputType="number"
+        android:text="Geçen Süre : "
+        app:layout_constraintStart_toStartOf="@+id/kalan_adim_sayisi_txt"
+        app:layout_constraintTop_toBottomOf="@+id/iki_titresim_arasi_gecen_sure_edit"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/kalan_adim_sayisi_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:text="Kalan Adım Sayısı : "
+        app:layout_constraintStart_toStartOf="@+id/kalan_adim_sayisi_progress"
+        app:layout_constraintTop_toBottomOf="@+id/gecen_sure_txt" />
+
+    <ProgressBar
+        android:id="@+id/kalan_adim_sayisi_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="340dp"
+        android:layout_height="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kalan_adim_sayisi_txt" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <RadioButton
+            android:id="@+id/saat_bazinda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zaman Bazında"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="OnClick" />
+
+        <RadioButton
+            android:id="@+id/dongu_bazinda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:text="Dongüsel"
+            app:layout_constraintEnd_toStartOf="@+id/saat_bazinda"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/saat_bazinda"
+            tools:ignore="OnClick" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio_group_id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/radio_group_id"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group_id"
+        tools:ignore="MissingConstraints">
+
+
+        <RadioButton
+            android:id="@+id/saat_ayari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saat Ayarla"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="OnClick" />
+
+        <RadioButton
+            android:id="@+id/dakika_ayari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Dakika Ayarla"
+            app:layout_constraintEnd_toStartOf="@+id/saat_bazinda"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/saat_bazinda"
+            tools:ignore="OnClick" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/not"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="8dp"
+        android:text=""
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>
